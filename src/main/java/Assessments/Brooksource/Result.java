@@ -10,19 +10,13 @@ class Result {
 
         // ATT
         String output = "";
-        boolean flag = false;
-        int countB = 0;
         char[] charArray = palindromeStr.toCharArray();
 
         // INIT CHECKS
         if(charArray.length <= 1) return "IMPOSSIBLE";
-//        if(palindromeStr.length() % 2 != 0) return "IMPOSSIBLE";
 
-        // METHS
-
-        flag = palCheck(charArray);
-
-        if(flag && countB % 2 == 0){
+        // METH
+        if(palCheck(charArray)){
             for (int i = 0; i < charArray.length; i++) {
                 if(charArray[i] != 'a') {
                     charArray[i] = 'a';
@@ -32,7 +26,6 @@ class Result {
                     } else {
                         return "IMPOSSIBLE";
                     }
-
                 }
             }
         }
@@ -40,8 +33,8 @@ class Result {
     }
 
     static boolean palCheck(char[] charArray){
-        for (int i = 0; i < charArray.length; i++) {
-            if(charArray[i] != 'a') return true;
+        for (char c : charArray) {
+            if (c != 'a') return true;
         }
         return false;
     }
