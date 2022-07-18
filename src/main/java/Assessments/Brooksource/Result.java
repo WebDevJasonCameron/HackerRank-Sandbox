@@ -1,3 +1,10 @@
+/**
+ *      Assessment
+ *
+ *      Take a palindrome
+ *
+ */
+
 package Assessments.Brooksource;
 
 class Result {

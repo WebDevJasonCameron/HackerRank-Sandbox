@@ -46,10 +46,12 @@ public class Problem01 {
 
     public static void main(String[] args) {
 
+        // Starts with this code bellow
         Scanner sc=new Scanner(System.in);
         String A=sc.next();
         String B=sc.next();
 
+        // Code Added Here
         Problem01 problem01 = new Problem01();
 
         problem01.sumOfStrings(A, B);
@@ -58,11 +60,11 @@ public class Problem01 {
 
     }
 
-    public void sumOfStrings(String A, String B){
+    public void sumOfStrings(String A, String B){               //   Simple addition
         System.out.println(A.length() + B.length());
     }
 
-    public void compareStringValue(String A, String B){
+    public void compareStringValue(String A, String B){         //   See Link about compareTo
 
         if(A.compareTo(B) > B.compareTo(A)) {
             System.out.println("Yes");
@@ -70,7 +72,7 @@ public class Problem01 {
         else System.out.println("No");
     }
 
-    public void combineStrings(String A, String B){
+    public void combineStrings(String A, String B){             //   Not to hard (split)
 
         String a = A.substring(0,1).toUpperCase() + A.substring(1);
         String b = B.substring(0,1).toUpperCase() + B.substring(1);
