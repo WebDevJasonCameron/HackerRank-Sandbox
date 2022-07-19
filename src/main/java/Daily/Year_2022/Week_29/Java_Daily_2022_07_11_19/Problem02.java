@@ -36,8 +36,32 @@ public class Problem02 {
 
     static boolean isAnagram(String a, String b) {
         // Complete the function
+        String A = a.toLowerCase();
+        String B = b.toLowerCase();
 
-        return false;
+        if(A.length() != B.length()) return false;
+
+        for (int i = 0; i <A.length(); i++) {
+            int c1 = 0;                                 //   Set holding vars
+            int c2 = 0;
+            char ch =A.charAt(i);
+
+            for (int j = 0; j <A.length(); j++) {      //   Count total of ch in string A
+                if(A.charAt(j) == ch) {
+                    c1++;
+                }
+            }
+
+            for (int j = 0; j < B.length(); j++) {      //   Count total of ch in string B
+                if(B.charAt(j) == ch) {
+                    c2++;
+                }
+            }
+            if(c1 != c2) return false;                  //   Check totals between a and b now.  If it does
+                                                        // not match, return the false now
+        }
+
+        return true;
     }
 
     public static void main(String[] args) {

@@ -13,6 +13,10 @@ public class Init_Daily {
         System.out.println(problem01.palCheck("3223"));
         */
 
+        Problem02 problem02 = new Problem02();
+
+        System.out.println(problem02.isAnagram("anagram", "margana") + " ... Should be True");
+        System.out.println(problem02.isAnagram("anagramm", "marganaa") + " ... Should be False");
 
     }
 
