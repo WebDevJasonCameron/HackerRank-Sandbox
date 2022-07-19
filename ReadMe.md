@@ -1,5 +1,8 @@
 # Hanker Rank Sandbox
 
+## 2022 -7 19 | First Video 
+Setting a goal to publish my first video on Monday, July 25th.  That is when the video needs to go live.  I want the video completed by July 22 (Friday). I would like to get a video out every week.  Each video will cover a coding challenge that looks interesting to me.  Some of them will be the ones I figured out on my own.  Others will be on challenges that I hadn't a clue on how to start (or finish).  I'll put the script in that week's video package.  I should have the challenge instructions, starting code, and my completed code (with comments).   
+
 ## 2022 07 15 | Video Walk Through
 Added another package.  This package system will keep code organized for videos.  This code can be used for screenshots, videos, and copy/paste explanation.  
 

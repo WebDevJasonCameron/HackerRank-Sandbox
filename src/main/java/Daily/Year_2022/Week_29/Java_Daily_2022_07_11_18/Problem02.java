@@ -39,11 +39,8 @@ public class Problem02 {
             else if (substring.compareTo(largest) >= 0) largest = substring;
         }
 
-
         return smallest + "\n" + largest;
     }
-
-
 
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
