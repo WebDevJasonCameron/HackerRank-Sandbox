@@ -6,11 +6,13 @@ public class Init_Daily {
 
         Problem01 problem01 = new Problem01();
 
-        String S = "Will this work? I Don't Know!!!";
+        String S = "";
+//        String S = "           YES      leading spaces        are valid,    problemsetters are         evillllll\n";
 
-        System.out.println(S);
-        System.out.println(problem01.stripMarks(S));
-        problem01.makeArray(S);
+
+//        System.out.println(S);
+//        System.out.println(problem01.stripMarks(S));
+//        problem01.makeArray(S);
 
         problem01.printArray(problem01.makeArray(problem01.stripMarks(S)));
 

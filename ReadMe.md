@@ -1,6 +1,9 @@
 # Hanker Rank Sandbox
 
-## 2022 -7 19 | First Video 
+## 2022 07 21 | Continue a Challenge
+Yesterday I worked on a problem in which was not able to pass all the tests.  As such, I decided to copy the files into today's folder (package).  I would like to see if I can get it to pass today.  This might be a good candidate for a future video walk through.
+
+## 2022 07 19 | First Video 
 Setting a goal to publish my first video on Monday, July 25th.  That is when the video needs to go live.  I want the video completed by July 22 (Friday). I would like to get a video out every week.  Each video will cover a coding challenge that looks interesting to me.  Some of them will be the ones I figured out on my own.  Others will be on challenges that I hadn't a clue on how to start (or finish).  I'll put the script in that week's video package.  I should have the challenge instructions, starting code, and my completed code (with comments).   
 
 ## 2022 07 15 | Video Walk Through

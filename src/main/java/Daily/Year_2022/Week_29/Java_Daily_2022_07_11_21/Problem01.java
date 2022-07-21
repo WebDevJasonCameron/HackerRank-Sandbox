@@ -31,25 +31,29 @@
  */
 
 
-package Daily.Year_2022.Week_29.Java_Daily_2022_07_11_20;
+package Daily.Year_2022.Week_29.Java_Daily_2022_07_11_21;
 
-import java.io.*;
-import java.util.*;
+import java.util.Scanner;
 
 public class Problem01 {
 
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         String s = scan.nextLine();
+        // Write your code here.                                    // Did not Pass:
+                                                                    // 3
+                                                                    // 6
+                                                                    // 7
+                                                                    // 10
 
-        start(s);
+        System.out.println("Testing Inputs:  " + s);
+        printArray(makeArray(stripMarks(s)));
 
         scan.close();
     }
 
     public static String stripMarks(String S){
-        String output = S.trim();
-        output = output.replaceAll("!", " ");
+        String output = S.replaceAll("!", " ");
         output = output.replaceAll(",", " ");
         output = output.replaceAll("_", " ");
         output = output.replaceAll("'", " ");
@@ -73,17 +77,6 @@ public class Problem01 {
         for (int i = 0; i < SA.length; i++) {
             System.out.println(SA[i]);
         }
-    }
-
-    public static void start(String S){
-
-        String s = S.trim();
-
-        if(s.isEmpty()) System.out.println("0");
-        else if(s.equals("")) System.out.println("0");
-        else if(s.equals(" ")) System.out.println("0");
-        else printArray(makeArray(stripMarks(S)));
-
     }
 
 }  //<--END
