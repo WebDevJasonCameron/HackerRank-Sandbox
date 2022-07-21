@@ -4,15 +4,12 @@ public class Init_Daily {
 
     public static void main(String[] args) {
 
-        Problem01 problem01 = new Problem01();
+        /**     PROBLEM 01 in previous day  */
 
-        String S = "Will this work? I Don't Know!!!";
 
-        System.out.println(S);
-        System.out.println(problem01.stripMarks(S));
-        problem01.makeArray(S);
 
-        problem01.printArray(problem01.makeArray(problem01.stripMarks(S)));
+
+
 
     }
 
