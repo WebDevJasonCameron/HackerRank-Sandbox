@@ -62,6 +62,10 @@
  *      Here is a link to learn more:
  *      https://www.w3schools.com/java/java_regex.asp
  *
+ *      and
+ *
+ *      https://docs.oracle.com/javase/8/docs/api/java/util/regex/Pattern.html
+ *
  */
 
 
