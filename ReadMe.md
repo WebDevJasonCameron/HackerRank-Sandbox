@@ -1,5 +1,8 @@
 # Hanker Rank Sandbox
 
+## 2022 07 22 | Python
+Well folks, we've actually added Python to this list of daily work.  I have been told I need to review the Python I did through college.  As such, I included Jupyter Notebooks under the Py dir.  I will probably open another repo just to focus on new things I have yet to work with.  Still, it is pretty cool to be able to have JS, Java, and Python all in this one sandbox!  Really cool.  
+
 ## 2022 07 21 | Continue a Challenge
 Yesterday I worked on a problem in which was not able to pass all the tests.  As such, I decided to copy the files into today's folder (package).  I would like to see if I can get it to pass today.  This might be a good candidate for a future video walk through.
 
