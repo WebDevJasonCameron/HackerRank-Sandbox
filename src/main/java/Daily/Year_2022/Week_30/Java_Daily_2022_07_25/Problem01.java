@@ -48,6 +48,9 @@
  *      I still do not understand REGEX.  The following code was provided by
  *      RodneyShag (5 years ago)
  *
+ *      Here is an outstanding explanation of the code:
+ *
+ *
  */
 
 
