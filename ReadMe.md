@@ -1,5 +1,8 @@
 # Hanker Rank Sandbox
 
+## 2022 07 26 | Playgrounds
+Created playgrounds in java package.  The purpose of these playgrounds are to learn some things that I keep running into but can't fully grasp without exploring them further.  A great example of this is regular expressions (REGEX).  This was never talked about during college.  We didn't get into it during the CodeUp program either.  However, I have gone through four challenges in hackerRank with REGEX being the primary focus.  Each time I needed to look up someone else's conclusion.  This is why I'm exploring it within the playground.  Also, I don't want another repo (or re-open the titanLearningJava).  
+
 ## 2022 07 22 | Python
 Well folks, we've actually added Python to this list of daily work.  I have been told I need to review the Python I did through college.  As such, I included Jupyter Notebooks under the Py dir.  I will probably open another repo just to focus on new things I have yet to work with.  Still, it is pretty cool to be able to have JS, Java, and Python all in this one sandbox!  Really cool.  
 
