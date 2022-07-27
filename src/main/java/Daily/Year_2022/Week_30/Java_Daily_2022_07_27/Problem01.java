@@ -46,30 +46,41 @@
 
 package Daily.Year_2022.Week_30.Java_Daily_2022_07_27;
 
-import java.util.Scanner;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
 
-/* Solution assumes we can't have the symbol "<" as text between tags */
 public class Problem01{
     public static void main(String[] args){
-        Scanner scan = new Scanner(System.in);
-        int testCases = Integer.parseInt(scan.nextLine());
 
-        while (testCases-- > 0) {
-            String line = scan.nextLine();
+        Scanner in = new Scanner(System.in);
+        int testCases = Integer.parseInt(in.nextLine());
+        while(testCases>0){
+            String line = in.nextLine();
 
-            boolean matchFound = false;
-            Pattern r = Pattern.compile("<(.+)>([^<]+)</\\1>");
-            Matcher m = r.matcher(line);
+            String pattern ="<(.+)>([^<>]+)</\\1>";
 
-            while (m.find()) {
+            int count = 0;
+
+            Pattern p = Pattern.compile(pattern);
+            Matcher m =  p.matcher(line);
+
+            while(m.find())
+            {
                 System.out.println(m.group(2));
-                matchFound = true;
+                count++;
             }
-            if ( ! matchFound) {
+            if(count == 0){
                 System.out.println("None");
             }
+
+            testCases--;
         }
     }
 }
+
+
+
+
