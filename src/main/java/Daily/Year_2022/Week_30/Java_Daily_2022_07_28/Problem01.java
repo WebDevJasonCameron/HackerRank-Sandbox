@@ -30,6 +30,9 @@
  *      You are only responsible for reordering the array's elements.
  *
  *
+ *  NOTE:
+ *          Not Completed.  Do some research on bubble sort to complete this!!!!
+ *
  */
 
 package Daily.Year_2022.Week_30.Java_Daily_2022_07_28;
@@ -38,6 +41,7 @@ import java.math.BigDecimal;
 import java.sql.Array;
 import java.util.*;
 
+import static java.lang.Float.parseFloat;
 import static java.lang.Integer.parseInt;
 import static java.lang.Integer.rotateLeft;
 
@@ -53,7 +57,7 @@ class Problem01{
         }
         sc.close();
 
-        s = descArray(n, s);
+        s = ansArray(n, s);
 
         //Output
         for(int i = 0; i < n; i++)
@@ -62,32 +66,31 @@ class Problem01{
         }
     }
 
-    public static String[] descArray(int n ,String[] s){
-        String[] hold = s;
-        String[] out = new String[n];
-
-
+    public static String[] ansArray(int n ,String[] s){
+        String[] out = s;
+        String hold = s[0];
 
         for (int i = 0; i < n; i++) {
-            String checker = s[i].toString();
-            String winner = "";
 
-            for (int j = 0; j < n; j++) {
+            for (int j = 0; j < n - i; j++) {
+                String numS1 = out[j];
+                String numS2 = out[j + 1];
 
-                if(parseInt(checker) == parseInt(s[j])) {
-                    winner = checker;
-                    System.out.println("winner ==: " + winner);
-                } else if(parseInt(checker) > parseInt(s[j])) {
-                    winner = checker;
-                    System.out.println("winner >: " + winner);
-                } else {
-                    winner = s[j];
-                    System.out.println("winner else: " + winner);
+                if(numS2 != null){
+                    if(parseFloat(numS1) == parseFloat(numS2)){
+                        out[i] = numS1;
+                        out[i + 1] = numS2;
+                        System.out.println("both are equal");
+                    } else if (parseFloat(numS1) < parseFloat(numS2)) {
+                        hold = numS1;
+                        out[i] = numS2;
+                        out[i + 1] = hold;
+                        System.out.println("switched " + numS2 + " and " + hold);
+                    } else {
+                        System.out.println("Remain");
+                    }
                 }
             }
-
-            out[i] = winner;
-
         }
 
         return out;
