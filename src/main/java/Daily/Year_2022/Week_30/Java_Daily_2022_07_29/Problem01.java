@@ -63,14 +63,23 @@ class Problem01{
         for(int i = 0; i < n; i++){
             s[i] = sc.next();
         }
-        for (int i = 0; i < s.length-2; i++) {
-            for (int j = 1; j < (n-i); j++) {
-                BigDecimal sj = new BigDecimal(s[j]);
-                BigDecimal sj1 = new BigDecimal(s[j-1]);
-                if(sj.compareTo(sj1) == 1){
-                    String temp = s[j];
-                    s[j] = s[j-1];
-                    s[j-1] = temp;
+
+                                                            //   Our Code Starts Here
+        for (int i = 0; i < s.length-2; i++) {              //   Could just be set to n
+
+            for (int j = 1; j < (n-i); j++) {               //   Subtract i, So we do not rework what has
+                                                            // been done.  Note we start j at 1
+
+                BigDecimal sj = new BigDecimal(s[j]);       //   I think Float could work instead.  Starting j
+                BigDecimal sj1 = new BigDecimal(s[j-1]);    // at 1 means we can compare index 1-1, and 1
+
+                if(sj.compareTo(sj1) == 1){                 //   This approach compares strings, not numbers!
+                                                            //   if index 2 greater than index 1
+
+                                                            //   Bubble sort:
+                    String temp = s[j];                     //   Move index 2 to temp
+                    s[j] = s[j-1];                          //   Move index 1 over to 2's
+                    s[j-1] = temp;                          //   Move index 2 (now temp) into 1's
                 }
             }
         }
